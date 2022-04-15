@@ -1,0 +1,215 @@
+.Hidden{
+    display: none;
+}
+
+body{
+    overflow-x: hidden;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 0fr 1fr;
+}
+
+
+/*POPUP*/
+/* Positionnez la forme Popup */
+.login-popup {
+    z-index: 1;
+    position: absolute;
+    top: 25em;
+    text-align: center;
+    width: 100%;
+}
+/* Masquez la forme Popup */
+.form-popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 55px;
+    margin-right: 55px;
+    padding: 25px;
+    
+    border: 2px solid black;
+    border-radius: 15px;
+    background: linear-gradient(lightgrey,white);
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    
+    position: relative;
+    top: -10em;
+    height: 100px;
+}
+.Input{
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.btn{
+    font-size: 1.25em;
+    border: none;
+    border-radius: 8px;
+    background: lightcoral;
+    padding: 3px;
+}
+
+/*TEST MOBILE FIRST*/
+
+[class*="col-"] {
+    float: left;
+}
+  
+/*For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+  
+/* For desktop: */  
+@media only screen and (max-width: 800px) {
+    .col-1 {
+        width: 100%;
+        font-size: 0.5rem;
+    }
+}
+
+
+#ColorJ1{
+    background: linear-gradient(to left,white 50%,lightgrey 50%);
+}
+
+.ColorJ2{
+    background: linear-gradient(to left,lightgrey 50%,white 50%);
+}
+
+/*TEST DE SWWITCH PLAYER1 & PLAYER2 EN ROUGE*/
+/*.PlayerToPlay{
+    color: red;
+    text-decoration: underline;
+}
+
+.PlayerNoPlay{
+    color: black;
+}*/
+
+/*Round du Joueur 1 & 2*/
+.current{
+    position: relative;
+    top: 2em;
+    padding: 1em;
+    background-color: red;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+}
+
+/*Global du Joueur 1 & 2*/
+.Global{
+    position: relative;
+    top: -5rem;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 3em;
+}
+
+/*DIV du Joueur 1*/
+.Joueur1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    width: 100%;
+    float: left;
+    margin: 0;
+}
+
+/*ID dans le Joueur1*/
+
+/*Score Global*/
+#GlobalJ1 {
+    color: red;
+    font-weight: lighter;
+    font-family: 'MS Serif', 'New York', sans-serif;
+    font-size: 4.5em;
+}
+
+/*Score du Round*/
+#J1{
+    color: white;
+    font-weight: lighter;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em;
+}
+
+/*DIV du Dé*/
+.container{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+
+/*ID dans le container*/
+#NewGame{
+    margin-top: 2em;
+    position: relative;
+    top: -20rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    width: 10em;
+}
+
+#FaceDé{
+    position: relative;
+    top: -10rem;
+    width: 10em;
+}
+
+#Btn{
+    position: relative;
+    top: 5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    width: 10em;
+}
+
+#btnHold{
+    position: relative;
+    top: 8rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    width: 10em;
+}
+
+/*DIV du Joueur 2*/
+.Joueur2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    float: right;
+    margin: 0;
+}
+
+/*ID dans le Joueur2*/
+
+/*Score Global*/
+#GlobalJ2 {
+    color: red;
+    font-weight: lighter;
+    font-family: 'MS Serif', 'New York', sans-serif;
+    font-size: 4.5em;
+}
+
+/*Score du Round*/
+#J2{
+    color: white;
+    font-weight: lighter;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em;
+}
