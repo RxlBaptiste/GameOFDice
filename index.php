@@ -9,24 +9,7 @@
 </head>
 
 <body id="ColorJ1" class="ColorJ2" >
-    <!--Joueur 1 -->
     
-    <!--Valeur du Dé non afficher sur la page-->
-    <p class="Hidden" id="Value"></p>
-
-    <div class="col-1 Joueur1">
-        <div class="Global">
-            <span name="J1" class="PlayerToPlay" id="PlayJ1">
-                Player 1
-            </span>  
-            <p id="GlobalJ1">0</p>
-        </div>
-        <br>
-        <div class="current">
-            Round
-            <p id="J1">0</p> 
-        </div>
-    </div>
     <!--PopUp des règles du jeu et des prénoms-->
     <dialog class="PopUp" open>
         <div>
@@ -63,6 +46,25 @@
             </div>
         </form>
     </dialog>
+    
+    <!--Joueur 1 -->
+    
+    <!--Valeur du Dé non afficher sur la page-->
+    <p class="Hidden" id="Value"></p>
+
+    <div class="col-1 Joueur1">
+        <div class="Global">
+            <span name="J1" class="PlayerToPlay" id="PlayJ1">
+                Player 1
+            </span>  
+            <p id="GlobalJ1">0</p>
+        </div>
+        <br>
+        <div class="current">
+            Round
+            <p id="J1">0</p> 
+        </div>
+    </div>
 
     <div class="col-1 container">
         <!--Bouton New Game-->
