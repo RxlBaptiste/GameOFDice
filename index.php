@@ -26,12 +26,12 @@
             </p>
         </div>
         <h2>Prénom des Joueurs : </h2>
-        <form class="PopUp" method="post" action="jeu.php" enctype="multipart/form-data">
+        <form class="PopUp" method="GET" action="jeu.php" enctype="multipart/form-data">
             <div>
                 <label>
                     <strong>Joueur 1 :</strong>
+                    <input id="Joueur N°1" name="Joueur 1" placeholder="Player 1" type="text" required>
                 </label>
-                <input id="Joueur N°1" name="Joueur 1" placeholder="Player 1" type="text" required>
             </div>
             <br>
             <div>
@@ -46,7 +46,7 @@
             </div>
         </form>
     </dialog>
-    
+
     <!--Joueur 1 -->
     
     <!--Valeur du Dé non afficher sur la page-->

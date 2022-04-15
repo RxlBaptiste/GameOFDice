@@ -18,7 +18,7 @@
         <div class="Global">
             <span name="J1" class="PlayerToPlay" id="PlayJ1">
                 <?php
-                echo $_POST ['Joueur 1'];
+                echo $_GET ['Joueur 1'];
                 ?>
             </span>  
             <p id="GlobalJ1">0</p>
@@ -54,7 +54,7 @@
         <div class="Global">
             <span name="J2" class="PlayerNoPlay" id="PlayJ2">
                 <?php
-                echo $_POST ['Joueur 2'];
+                echo $_GET ['Joueur 2'];
                 ?>
             </span>
             <p id="GlobalJ2">0</p>
