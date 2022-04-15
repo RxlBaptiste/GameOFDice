@@ -30,14 +30,14 @@
             <div>
                 <label>
                     <strong>Joueur 1 :</strong>
-                    <input id="Joueur N°1" name="Joueur 1" placeholder="Player 1" type="text" required>
+                    <input id="Joueur N°1" name="Player1" placeholder="Player 1" type="text" required>
                 </label>
             </div>
             <br>
             <div>
                 <label>
                     <strong>Joueur 2 :</strong>
-                    <input id="Joueur N°2" name="Joueur 2" placeholder="Player 2" type="text" required> 
+                    <input id="Joueur N°2" name="Player2" placeholder="Player 2" type="text" required> 
                 </label>
             </div>
             <br>
