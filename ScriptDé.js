@@ -248,7 +248,7 @@ function HoldJ1() {
   //si le score global est égale a 100
   if(SecondSommeGlobalJ1 >= 100) {
     location.reload();
-    alert('WIN Joueur 1');
+    alert('<?php echo $_GET [Player2]; ?> à gagner la partie');
   }else{
     //console.log('CONTINUE !');
   }
@@ -318,7 +318,7 @@ function HoldJ2() {
   //si le score global est égale a 100
   if(SecondSommeGlobalJ2 >= 100) {
     location.reload();
-    alert('WIN Joueur 2');
+    alert('<?php echo $_GET [Player2]; ?> à gagner la partie');
   }else{
     //console.log('CONTINUE !');
   }
