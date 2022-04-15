@@ -17,9 +17,7 @@
     <div class="col-1 Joueur1">
         <div class="Global">
             <span name="J1" class="PlayerToPlay" id="PlayJ1">
-                <?php
-                echo $_POST ['Joueur 1'];
-                ?>
+                Player 1
             </span>  
             <p id="GlobalJ1">0</p>
         </div>
@@ -29,7 +27,9 @@
             <p id="J1">0</p> 
         </div>
     </div>
-
+    <a href="javascript:PopupCentrer('popup.html',300,150,'menubar=no,status=no')">
+        popup centré de 300 par 150 pixels
+    </a>
     <div class="col-1 container">
         <!--Bouton New Game-->
         <button id="NewGame" type="button" onclick="Reload()">
@@ -53,9 +53,7 @@
     <div class="col-1 Joueur2">
         <div class="Global">
             <span name="J2" class="PlayerNoPlay" id="PlayJ2">
-                <?php
-                echo $_POST ['Joueur 2'];
-                ?>
+                Player 2
             </span>
             <p id="GlobalJ2">0</p>
         </div>

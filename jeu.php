@@ -9,16 +9,17 @@
 </head>
 
 <body id="ColorJ1" class="ColorJ2" >
-
     <!--Joueur 1 -->
-
+    
     <!--Valeur du Dé non afficher sur la page-->
     <p class="Hidden" id="Value"></p>
 
     <div class="col-1 Joueur1">
         <div class="Global">
-            <span name="J1" class="PlayerToPlay" id="PlayJ1" aria-placeholder="Player 1">
-                Player 1
+            <span name="J1" class="PlayerToPlay" id="PlayJ1">
+                <?php
+                echo $_POST ['Joueur 1'];
+                ?>
             </span>  
             <p id="GlobalJ1">0</p>
         </div>
@@ -31,7 +32,7 @@
 
     <div class="col-1 container">
         <!--Bouton New Game-->
-        <button id="NewGame" type="button" nclick="Reload()">
+        <button id="NewGame" type="button" onclick="Reload()">
             New Game
         </button>
         <br>
@@ -41,18 +42,20 @@
         <!--Bouton du dé-->
         <form class="btnLancer">
             <input id="Btn" type="button" 
-            value="Lancer le dé" nclick="J1AndJ2()">
+            value="Lancer le dé" onclick="J1AndJ2()">
         </form>
         <br>
         <!--Button Hold-->
-        <input id="btnHold" type="button" nclick="Holds()" value="HOLD" >
+        <input id="btnHold" type="button" onclick="Holds()" value="HOLD" >
     </div>
 
     <!--Joueur 2-->
     <div class="col-1 Joueur2">
         <div class="Global">
-            <span name="J2" class="PlayerNoPlay" id="PlayJ2" aria-placeholder="Player 2">
-                Player 2
+            <span name="J2" class="PlayerNoPlay" id="PlayJ2">
+                <?php
+                echo $_POST ['Joueur 2'];
+                ?>
             </span>
             <p id="GlobalJ2">0</p>
         </div>
@@ -60,27 +63,6 @@
         <div class="current">
             Round
             <p id="J2">0</p>
-        </div>
-    </div>
-    
-    <!--PopUp en debut de partie-->
-    <div class="login-popup">
-        <div class="form-popup">
-          <form class="" method="post" action="index.php" enctype="multipart/form-data">
-            <h2>Nom des Joueurs</h2>
-            <br>
-            <label>
-              <strong>Joueur 1 : </strong>
-            </label>
-            <input class="Input" type="text" id="Joueur1" placeholder="Player 1" name="Joueur 1" required />
-            <label>
-              <strong>Joueur 2 :</strong>
-            </label>
-            <input class="Input" type="text" id="Joueur 2" placeholder="Player 2" name="Joueur 2" required />
-            <br><br>
-            <button type="submit" class="btn">Jouer</button>
-            <!--<button type="button" class="btn cancel" onclick="closeForm()">Fermer</button>-->
-          </form>
         </div>
     </div>
     <script src="ScriptDé.js"></script>
