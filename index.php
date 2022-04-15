@@ -27,9 +27,43 @@
             <p id="J1">0</p> 
         </div>
     </div>
-    <!--<a href="javascript:Popup('popup.html',300,150,'menubar=no,status=no')">
-        popup centré de 300 par 150 pixels
-    </a>-->
+    <!--PopUp des règles du jeu et des prénoms-->
+    <dialog class="PopUp" open>
+        <div>
+            <p>
+                <strong>Règles : </strong><br><br>
+                Chaque joueur possède un score temporaire (ROUND) et un score global.<br>
+                À chaque tour, le joueur a son ROUND initialisé à 0 et peut lancer un dé autant de fois qu'il le souhaite. <br>
+                Le résultat d’un lancer est ajouté au ROUND. <br><br>
+                Lors de son tour, le joueur peut décider à tout moment de : <br><br>
+                - Cliquer sur l’option “Hold”, qui permet d’envoyer les points du ROUND vers le GLOBAL.<br>
+                Ce sera alors le tour de l’autre joueur.<br><br>
+                - Lancer le dé. S’il obtient un 1, son score ROUND est perdu et c’est la fin de son tour. <br>
+                Le premier joueur qui atteint les 100 points sur global gagne le jeu.
+            </p>
+        </div>
+        <h2>Prénom des Joueurs : </h2>
+        <form class="PopUp" method="post" action="jeu.php" enctype="multipart/form-data">
+            <div>
+                <label>
+                    <strong>Joueur 1 :</strong>
+                </label>
+                <input id="Joueur N°1" name="Joueur 1" placeholder="Player 1" type="text" required>
+            </div>
+            <br>
+            <div>
+                <label>
+                    <strong>Joueur 2 :</strong>
+                    <input id="Joueur N°2" name="Joueur 2" placeholder="Player 2" type="text" required> 
+                </label>
+            </div>
+            <br>
+            <div>
+                <button type="submit">JOUER</button>
+            </div>
+        </form>
+    </dialog>
+
     <div class="col-1 container">
         <!--Bouton New Game-->
         <button id="NewGame" type="button" onclick="Reload()">
