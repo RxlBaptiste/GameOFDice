@@ -226,7 +226,7 @@ function HoldJ1() {
   //si le score global est égale a 100
   if(SecondSommeGlobalJ1 >= 100) {
     location.reload();
-    alert('Le Joueur 1 à gagner la partie avec ' + SecondSommeGlobalJ1 + 'points.');
+    alert('Le Joueur 1 à gagner la partie avec ' + SecondSommeGlobalJ1 + ' points.');
   }else{
     //console.log('Continue !');
   }
@@ -290,7 +290,7 @@ function HoldJ2() {
   //si le score global est égale a 100
   if(SecondSommeGlobalJ2 >= 100) {
     location.reload();
-    alert('Le Joueur 2 à gagner la partie avec ' + SecondSommeGlobalJ2 + 'points.');
+    alert('Le Joueur 2 à gagner la partie avec ' + SecondSommeGlobalJ2 + ' points.');
   }else{
     //console.log('Continue !');
   }
