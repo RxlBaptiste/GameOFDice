@@ -153,7 +153,7 @@ function J1AndJ2() {
   PlayerPlay();
 }
 
-//var PlayPlayer1 = true;
+//Savoir qui joue en fonction de la couleur du Background
 
 function PlayerPlay() {
 
@@ -161,27 +161,10 @@ function PlayerPlay() {
 
   if(isOneToExit === false || turnPlayer1 === false) {
     BackgroundColorJ1.removeAttribute("id");
-    /*if(PlayPlayer1 === false) {
-      PlayPlayer1 = true;
-      var J1 = document.getElementsByName("J1");
-
-      document.getElementsByName("J2").className = 'PlayerToPlay';
-      console.log(document.getElementsByName("J2"));
-    }*/
   }else if(isOneToExit === true || turnPlayer1 === true) {
     BackgroundColorJ1.setAttribute("id","ColorJ1");
-    /*if(PlayPlayer1 === true) {
-      PlayPlayer1 = false;
-      document.getElementsByName("J1").className = 'PlayerToPlay';
-      console.log(document.getElementsByName("J1"));
-
-      document.getElementsByName("J2").className = 'PlayerNoPlay';
-      console.log(document.getElementsByName("J2"));
-    }*/
   }
 }
-
-
 
 //Creation du boutton Hold Avec la "sauvegarde" des points
 
@@ -207,7 +190,6 @@ function HoldJ1() {
     previousValue + currentValue,
     GlobalJ1Initial
   );
-  //console.log(FirstSommeGlobalJ1);
   
   //Affichage de la somme 
   GlobalJ1.textContent = FirstSommeGlobalJ1;
@@ -223,15 +205,12 @@ function HoldJ1() {
   
  //Nouveau tableau des sommes 
   TableauSommeGlobalJ1.push(ScoreJ1.textContent);
-  //console.log(TableauSommeGlobalJ1);
 
   //Tableau des somme converti en INT
   var TableauSommeGlobalJ1INT = [];
   length = TableauSommeGlobalJ1.length;
   for(var i = 0; i < length; i++)
   TableauSommeGlobalJ1INT.push(parseInt(TableauSommeGlobalJ1[i]));
-
-  //console.log(TableauSommeGlobalJ1INT);
 
   //Addition des nombre du tableau précédent
   var GlobalSommeJ1Initial = 0;
@@ -240,7 +219,6 @@ function HoldJ1() {
     previousValue + currentValue,
     GlobalSommeJ1Initial
   );
-  //console.log('Affiche du score final ' + SecondSommeGlobalJ1);
 
   //Affichage du score total
   GlobalJ1.textContent = SecondSommeGlobalJ1;
@@ -248,9 +226,7 @@ function HoldJ1() {
   //si le score global est égale a 100
   if(SecondSommeGlobalJ1 >= 100) {
     location.reload();
-    alert('"<?php echo $_GET [Player2]; ?>" à gagner la partie');
-  }else{
-    //console.log('CONTINUE !');
+    alert('Le Joueur 1 à gagner la partie avec ' + SecondSommeGlobalJ1 + 'points.');
   }
   turnPlayer1 = false;
 }
@@ -277,8 +253,6 @@ function HoldJ2() {
     GlobalJ2Initial
   );
 
-  //var GlobalJ2 = document.querySelector ('#GlobalJ2');
-
   //Affichage de la somme 
   GlobalJ2.textContent = FirstSommeGlobalJ2;
     
@@ -293,15 +267,12 @@ function HoldJ2() {
   
  //Nouveau tableau des sommes 
  TableauSommeGlobalJ2.push(ScoreJ2.textContent);
- //console.log(TableauSommeGlobalJ2);
 
   //Tableau des somme converti en INT
  var TableauSommeGlobalJ2INT = [];
  length = TableauSommeGlobalJ2.length;
  for(var i = 0; i < length; i++)
  TableauSommeGlobalJ2INT.push(parseInt(TableauSommeGlobalJ2[i]));
-
- //console.log(TableauSommeGlobalJ2INT);
 
   //Addition des nombre du tableau précédent
  var GlobalSommeJ2Initial = 0;
@@ -310,7 +281,6 @@ function HoldJ2() {
    previousValue + currentValue,
    GlobalSommeJ2Initial
  );
- //console.log('Affiche du score final ' + SecondSommeGlobalJ2);
  
   //Affichage du score total
  GlobalJ2.textContent = SecondSommeGlobalJ2;
@@ -318,9 +288,7 @@ function HoldJ2() {
   //si le score global est égale a 100
   if(SecondSommeGlobalJ2 >= 100) {
     location.reload();
-    alert('<?php echo $_GET [Player2]; ?> à gagner la partie');
-  }else{
-    //console.log('CONTINUE !');
+    alert('Le Joueur 2 à gagner la partie avec ' + SecondSommeGlobalJ2 + 'points.');
   }
   turnPlayer1 = true;
 }
@@ -337,12 +305,4 @@ function Holds() {
 //Boutton New Game
 function Reload() {
   location.reload();
-}
-
-//PopUp
-
-function PopUp(page, largeur, hauteur, options) {
-  var top=(screen.height-hauteur)/2;
-  var left=(screen.width-largeur)/2;
-  window.open(page,"","top="+top+",left="+left+",width="+largeur+",height="+hauteur+","+options);
 }

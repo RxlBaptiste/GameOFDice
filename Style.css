@@ -22,16 +22,9 @@ body{
     align-items: center;
     justify-content: center; 
     
-    /*position: static;*/
     top: 8em;
 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.btnJouer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 /*TEST MOBILE FIRST*/
@@ -61,16 +54,6 @@ body{
 .ColorJ2{
     background: linear-gradient(to left,lightgrey 50%,white 50%);
 }
-
-/*TEST DE SWWITCH PLAYER1 & PLAYER2 EN ROUGE*/
-/*.PlayerToPlay{
-    color: red;
-    text-decoration: underline;
-}
-
-.PlayerNoPlay{
-    color: black;
-}*/
 
 /*Round du Joueur 1 & 2*/
 .current{
