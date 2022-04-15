@@ -27,9 +27,9 @@
             <p id="J1">0</p> 
         </div>
     </div>
-    <a href="javascript:Popup('popup.html',300,150,'menubar=no,status=no')">
+    <!--<a href="javascript:Popup('popup.html',300,150,'menubar=no,status=no')">
         popup centré de 300 par 150 pixels
-    </a>
+    </a>-->
     <div class="col-1 container">
         <!--Bouton New Game-->
         <button id="NewGame" type="button" onclick="Reload()">
