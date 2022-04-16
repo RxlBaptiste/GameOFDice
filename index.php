@@ -42,7 +42,7 @@
             </div>
             <br>
             <div>
-                <button class="button btn-Play" type="submit">JOUER</button>
+                <button id="button" class="btn-Play" type="submit">JOUER</button>
             </div>
         </form>
     </dialog>
