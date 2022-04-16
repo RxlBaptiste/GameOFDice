@@ -27,6 +27,38 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/*Button play*/
+
+.button {
+    cursor: pointer;
+    padding: 2rem 7rem;
+    background: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    will-change: transform;
+}
+
+.btn-Play {
+    letter-spacing: 0.15rem;
+    position: relative;
+    background: transparent;
+    color: black;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    border-radius: 40px;
+    z-index: 1;
+    border: rgba(0, 0, 0, 0.377) solid 0.5px;
+}
+.btn-Play:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.20), -5px -5px 10px rgba(0, 0, 0, 0.20);
+    transform: scale(0.95);
+    border: white solid 0.5px;
+}  
+
 /*TEST MOBILE FIRST*/
 
 [class*="col-"] {
