@@ -54,10 +54,10 @@
     <div class="col-1 Joueur2">
         <div class="Global">
             <div>
+                <span id="BallRedJ2" class="Hidden">●</span>
                 <span name="J2" class="PlayerNoPlay" id="PlayJ2">
                     Player 2
                 </span>
-                <span id="BallRedJ2" class="Hidden">●</span>
             </div>
             <p id="GlobalJ2">0</p>
         </div>
