@@ -158,11 +158,18 @@ function J1AndJ2() {
 function PlayerPlay() {
 
   var BackgroundColorJ1 = document.querySelector("body");
+  var J1Red = document.getElementById("BallRedJ1");
+  var J2Red = document.getElementById("BallRedJ2");
+
 
   if(isOneToExit === false || turnPlayer1 === false) {
     BackgroundColorJ1.removeAttribute("id");
+    J1Red.setAttribute("class", "Hidden");
+    J2Red.removeAttribute("class");
   }else if(isOneToExit === true || turnPlayer1 === true) {
     BackgroundColorJ1.setAttribute("id","ColorJ1");
+    J2Red.setAttribute("class", "Hidden");
+    J1Red.removeAttribute("class");
   }
 }
 

@@ -16,11 +16,12 @@
 
     <div class="col-1 Joueur1">
         <div class="Global">
-            <span name="J1" class="PlayerToPlay" id="PlayJ1">
-                <?php
-                echo $_GET ['Player1'];
-                ?>
-            </span>  
+            <div>
+                <span name="J1" class="PlayerToPlay" id="PlayJ1">
+                    Player 1
+                </span>
+                <span id="BallRedJ1" class="GoPlay">●</span>
+            </div>
             <p id="GlobalJ1">0</p>
         </div>
         <br>
@@ -52,11 +53,12 @@
     <!--Joueur 2-->
     <div class="col-1 Joueur2">
         <div class="Global">
-            <span name="J2" class="PlayerNoPlay" id="PlayJ2">
-                <?php
-                echo $_GET ['Player2'];
-                ?>
-            </span>
+            <div>
+                <span name="J2" class="PlayerNoPlay" id="PlayJ2">
+                    Player 2
+                </span>
+                <span id="BallRedJ2" class="Hidden">●</span>
+            </div>
             <p id="GlobalJ2">0</p>
         </div>
         <br>

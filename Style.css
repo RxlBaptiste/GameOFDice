@@ -32,12 +32,20 @@ body{
 .buttons {
     text-transform: uppercase;
     cursor: pointer;
-    background: white;
+
+    background-color: white;
     border: rgb(197, 195, 195) solid 1px;
     text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inline-size: 5px;
+
+    white-space: nowrap;
     will-change: transform;
     font-size: 1.7rem;
-    padding: 2rem 7rem;
+    padding: 1rem 7rem;
 }
 
 .NewGame, .Lancer, .Hold {
@@ -49,18 +57,18 @@ body{
     transition: 0.3s ease-in-out;
     border-radius: 40px;
     z-index: 1;
-    border: rgb(197, 195, 195) solid 0.5px;
+    border: rgb(125, 125, 125) solid 1.8px;
     transition: 0ms;
 }
 
 .NewGame:hover, .Lancer:hover, .Hold:hover, .btn-Play:hover {
-    border: rgb(120, 120, 120) solid 0.5px;
+    border: rgb(50, 50, 50) solid 1.8px;
 }
 
 .NewGame:active, .Lancer:active, .Hold:active {
     transition: 0ms;
     box-shadow:8px 8px 10px rgba(0, 0, 0, 0.2);
-    border: gainsboro solid 0.5px;
+    border: rgb(190, 190, 190) solid 1.8px;
     border-radius: 40px;
 }
 
@@ -86,15 +94,20 @@ body{
     color: black;
     border-radius: 40px;
     z-index: 1;
-    border: rgb(197, 195, 195) solid 0.5px;
+    border: rgb(197, 195, 195) solid 1.8px;
     transition: 0ms;
 }
 .btn-Play:active{
     transition: 0ms;
     /*font-weight: 700;*/
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.20), -2px -2px 8px rgba(0, 0, 0, 0.20);
-    border: gainsboro solid 0.5px;
+    border: gainsboro solid 1.8px;
 }
+
+#BallRedJ1, #BallRedJ2{
+    color: red;
+}
+
 
 /*TEST MOBILE FIRST*/
 
@@ -190,7 +203,7 @@ body{
 
 /*ID dans le container*/
 #NewGame{
-    margin-top: 2em;
+    margin-top: 3rem;
     position: relative;
     top: -2.5em;
     font-family: 'Times New Roman', Times, serif;
