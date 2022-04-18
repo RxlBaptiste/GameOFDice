@@ -80,11 +80,13 @@ body{
 
 
 #ColorJ1{
-    background: linear-gradient(to left,white 50%,lightgrey 50%);
+    background: linear-gradient(to left,white 50%,lightgrey 50%) repeat-y;
+    background-attachment: fixed;
 }
 
 .ColorJ2{
-    background: linear-gradient(to left,lightgrey 50%,white 50%);
+    background: linear-gradient(to left,lightgrey 50%,white 50%) repeat-y;
+    background-attachment: fixed;
 }
 
 /*Round du Joueur 1 & 2*/
