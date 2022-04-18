@@ -68,7 +68,7 @@
 
     <div class="col-1 container">
         <!--Bouton New Game-->
-        <button id="NewGame" type="button" onclick="Reload()">
+        <button id="NewGame" class="buttons NewGame"  type="button" onclick="Reload()">
             New Game
         </button>
         <br>
@@ -77,7 +77,7 @@
         <br>
         <!--Bouton du dé-->
         <form class="btnLancer">
-            <input id="Btn" type="button" 
+            <input id="Btn" class="buttons Lancer"  type="button" 
             value="Lancer le dé" onclick="J1AndJ2()">
         </form>
         <br>
@@ -88,7 +88,7 @@
     <!--Joueur 2-->
     <div class="col-1 Joueur2">
         <div class="Global">
-            <span name="J2" class="PlayerNoPlay" id="PlayJ2">
+            <span name="J2" class="buttons Hold"  class="PlayerNoPlay" id="PlayJ2">
                 Player 2
             </span>
             <p id="GlobalJ2">0</p>

@@ -27,6 +27,43 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/*Buttons NewGame/LancerDé/Hold */
+
+.buttons {
+    text-transform: uppercase;
+    cursor: pointer;
+    background: white;
+    border: rgb(197, 195, 195) solid 1px;
+    text-align: center;
+    will-change: transform;
+    font-size: 1.7rem;
+    padding: 2rem 7rem;
+}
+
+.NewGame, .Lancer, .Hold {
+    letter-spacing: 0.15rem;
+    position: relative;
+    background: transparent;
+    color: black;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    border-radius: 40px;
+    z-index: 1;
+    border: rgb(197, 195, 195) solid 0.5px;
+    transition: 0ms;
+}
+
+.NewGame:hover, .Lancer:hover, .Hold:hover, .btn-Play:hover {
+    border: rgb(120, 120, 120) solid 0.5px;
+}
+
+.NewGame:active, .Lancer:active, .Hold:active {
+    transition: 0ms;
+    box-shadow:8px 8px 10px rgba(0, 0, 0, 0.2);
+    border: gainsboro solid 0.5px;
+    border-radius: 40px;
+}
+
 /*Button play*/
 
 .button {
@@ -37,27 +74,27 @@ body{
     display: inline-block;
     font-size: 1.7rem;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 100;
     position: relative;
     will-change: transform;
 }
 
 .btn-Play {
-    letter-spacing: 0.15rem;
+    letter-spacing: 0.05rem;
     position: relative;
     background: transparent;
     color: black;
-    overflow: hidden;
-    transition: 0.3s ease-in-out;
     border-radius: 40px;
     z-index: 1;
-    border: rgba(0, 0, 0, 0.377) solid 0.5px;
+    border: rgb(197, 195, 195) solid 0.5px;
+    transition: 0ms;
 }
-.btn-Play:hover {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.20), -5px -5px 10px rgba(0, 0, 0, 0.20);
-    transform: scale(0.95);
-    border: white solid 0.5px;
-}  
+.btn-Play:active{
+    transition: 0ms;
+    /*font-weight: 700;*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.20), -2px -2px 8px rgba(0, 0, 0, 0.20);
+    border: gainsboro solid 0.5px;
+}
 
 /*TEST MOBILE FIRST*/
 

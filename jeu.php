@@ -32,7 +32,7 @@
 
     <div class="col-1 container">
         <!--Bouton New Game-->
-        <button id="NewGame" type="button" onclick="Reload()">
+        <button id="NewGame" class="buttons NewGame" type="button" onclick="Reload()">
             New Game
         </button>
         <br>
@@ -41,12 +41,12 @@
         <br>
         <!--Bouton du dé-->
         <form class="btnLancer">
-            <input id="Btn" type="button" 
+            <input id="Btn" class="buttons Lancer" type="button" 
             value="Lancer le dé" onclick="J1AndJ2()">
         </form>
         <br>
         <!--Button Hold-->
-        <input id="btnHold" type="button" onclick="Holds()" value="HOLD" >
+        <input id="btnHold" class="buttons Hold" type="button" onclick="Holds()" value="HOLD" >
     </div>
 
     <!--Joueur 2-->
