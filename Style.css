@@ -141,8 +141,8 @@ body{
 
 /*Round du Joueur 1 & 2*/
 .current{
-    height: 65px;
-    width: 90px;
+    height: 4em;
+    width: 5em;
     border-radius: 20px;
     position: relative;
     top: 2em;
