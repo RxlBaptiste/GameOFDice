@@ -15,7 +15,7 @@ body{
 /*POPUP*/
 
 .PopUp{
-    z-index: 1;
+    z-index: 9;
 
     display: flex;
     flex-direction: column;
@@ -164,6 +164,8 @@ body{
 
 /*DIV du Joueur 1*/
 .Joueur1{
+    z-index: 2;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -198,6 +200,8 @@ body{
 
 /*DIV du Dé*/
 .container{
+    z-index: 2;
+
     display: flex;
     align-items: center;
     justify-content:center;
@@ -237,6 +241,8 @@ body{
 
 /*DIV du Joueur 2*/
 .Joueur2{
+    z-index: 2;
+
     display: flex;
     align-items: center;
     justify-content: center;
