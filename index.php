@@ -26,7 +26,7 @@
             </p>
         </div>
         <h2>Prénom des Joueurs : </h2>
-        <form class="PopUp" method="GET" action="jeu.php" enctype="multipart/form-data">
+        <form class="PopUp" method="GET" action="jeu.php">
             <div>
                 <label>
                     <strong>Joueur 1 :</strong>

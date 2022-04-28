@@ -18,7 +18,7 @@
         <div class="Global">
             <div>
                 <span name="J1" class="PlayerToPlay" id="PlayJ1">
-                    Player 1
+                    <?php $_GET['Player1']?>
                 </span>
                 <span id="BallRedJ1" class="GoPlay">●</span>
             </div>
@@ -56,7 +56,7 @@
             <div>
                 <span id="BallRedJ2" class="Hidden">●</span>
                 <span name="J2" class="PlayerNoPlay" id="PlayJ2">
-                    Player 2
+                    <?php $_GET['Player1']?>
                 </span>
             </div>
             <p id="GlobalJ2">0</p>
